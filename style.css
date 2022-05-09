@@ -15,7 +15,7 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font: 微軟正黑體;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -43,7 +43,7 @@ table {
 }
 
 body {
-    font-family: STSong;
+    font-family: 微軟正黑體;
     color: #292929;
     margin-left: 2.5%;
     margin-top: 1.5%;
@@ -490,6 +490,16 @@ input[type='radio'] {
     font-family: STSong;
 }
 
+
+.card-header{
+    font-size:30px;
+}
+/* .indexbody{
+    background-color:thistle;
+} */
+.maincontainer{
+    line-height: 30px;
+}
 @media screen and (max-width:1200px) { 
     
     .introduction{
