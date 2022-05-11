@@ -330,7 +330,42 @@ input[type='radio'] {
     margin-top: 10px;
 } */
 
+.function{
+    width: 50%;
+    border:#FFACAC 3px solid;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 1%;
+    -webkit-box-shadow: 2px 2px #ffc2c2;
+	-moz-box-shadow: 2px 2px #ffc2c2;
+	box-shadow: 2px 2px #ffc2c2;
 
+}
+.demo_pic img{
+    width: 100%;
+    border:#ffcccc 2px solid;
+    border-radius: 5px;
+
+}
+
+.demo_pic_num{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.demo_descript{
+    margin: auto;
+    /* text-align: center; */
+    padding: 5px;
+    /* font-weight: bold; */
+    margin-top: 10px;
+    border:#ffcccc 2px solid;
+}
+.demo_descript_emphasis{
+    font-weight: bold;
+    color: red;
+}
 
 #news3_assisted_pic{
     width: 100%;
