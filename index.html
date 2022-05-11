@@ -58,43 +58,73 @@
 
 <script>
  
-
-function send() {
-  let name = "123"
-  let phone = "456"
-  let demand = "789"
-  const proxyurl = "https://cors.bridged.cc/";
-
-  $.ajax({
-      
-    url: "https://corsanywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxQkWZjVFxEHULPU7nSvmF9d0h2r9HXQ0rY3kvtxWXXYcztCBmkZUvOUZha_aYRgbxJ/exec",
-    data: {
-        "name": name,
-        "phone": phone,
-        "demand": demand
-    },
-    success: function(response) {
-        console.log(response)
-      if(response == "成功"){
-        alert("成功");
-      }
-      else{
-        alert(response);
-      }
-    },
-  });
-};
  
+
+    window.onload = function () {
+        localStorage.clear();
+    };
+
+
 
     function dogo(){
       // var urls = new Array();
       // urls[0] = "assisted/function_demo.html";
       // urls[1] = "normal/demo.html";
       // n = Math.floor(Math.random()*2);
-      localStorage.setItem('exam', 1);
-      location.href= "exam1/intro.html";
-    
+
+    //   var n = Math.floor(Math.random()*8)+1;
+      var n = 1;
+      if(n==1){
+        localStorage.setItem('exam', 1);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 0);
+        location.href= "exam1/intro.html";
+
+
+      }else if (n==2){
+        localStorage.setItem('exam', 2);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 0);
+        location.href= "exam2/intro.html";
+
+      }else if (n==3){
+        localStorage.setItem('exam', 3);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+
+      }else if (n==4){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam4/intro.html";
+
+      }
+      else if (n==5){
+        localStorage.setItem('exam', 5);
+        localStorage.setItem('systemsupport', 1);
+        localStorage.setItem('perspectivetaking', 0);
+        location.href= "exam5/intro.html";
+      }else if (n==6){
+        localStorage.setItem('exam', 6);
+        localStorage.setItem('systemsupport', 1);
+        localStorage.setItem('perspectivetaking', 0);
+        location.href= "exam6/intro.html";
+      }else if (n==7){
+        localStorage.setItem('exam', 7);
+        localStorage.setItem('systemsupport', 1);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam7/intro.html";
+      }else if (n==8){
+        localStorage.setItem('exam', 8);
+        localStorage.setItem('systemsupport', 1);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam8/intro.html";
+      }
+
     }
 </script>
+
+
 
 </html>

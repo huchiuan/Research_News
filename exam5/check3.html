@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>「新聞網站系統測試」實驗</title>
+    <link rel="stylesheet" href="../style.css">    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body  class="d-flex flex-column  indexbody" style="background-color:mistyrose;" >
+    
+    <div class="container">
+        <div class="mbti_h1"><h1>請回答下列問題</h1></div>
+        <div class="mbti_qusetion_area">
+            <div class="question">
+                <div class="question_title"><p>1. 性別</p></div>
+                <div class="answer_option">
+                    <form>
+                        <label><input type="radio" name="personinfo_1" value="1" required>男</label><br>
+                        <label><input type="radio" name="personinfo_1" value="2">女</label><br>
+                        <label><input type="radio" name="personinfo_1" value="3">其他</label>
+                    </form>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>2. 年齡</p></div>
+                <div class="answer_option">
+                    <form>
+                        <label><input type="radio" name="personinfo_2" value="1" required>20歲以下(包含20歲)</label><br>
+                        <label><input type="radio" name="personinfo_2" value="2">21 ~ 30歲</label><br>
+                        <label><input type="radio" name="personinfo_2" value="3">31 ~ 40歲</label><br>
+                        <label><input type="radio" name="personinfo_2" value="4">41 ~ 50歲</label><br>
+                        <label><input type="radio" name="personinfo_2" value="5">51 ~ 60歲</label><br>
+                        <label><input type="radio" name="personinfo_2" value="6">61歲以上(包含61歲)</label>
+                    </form>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>3. 教育程度</p></div>
+                <div class="answer_option">
+                    <form>
+                        <label><input type="radio" name="personinfo_3" value="1" required>國中(含)以下</label><br>
+                        <label><input type="radio" name="personinfo_3" value="2">高中(職)</label><br>
+                        <label><input type="radio" name="personinfo_3" value="3">大專</label><br>
+                        <label><input type="radio" name="personinfo_3" value="4">研究所以上</label><br>
+
+                    </form>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>4. 教育背景</p></div>
+                <div class="answer_option">
+                    <select name="personinfo_4" style="font-family: STSong;font-size: 15px;">
+                        <option value="0" disabled selected>請選擇</option>
+                        <option value="1">資訊學群</option>
+                        <option value="2">工程學群</option>
+                        <option value="3">數理化學群</option>
+                        <option value="4">醫藥衛生學群</option>
+                        <option value="5">生命科學學群</option>
+                        <option value="6">生物資源學群</option>
+                        <option value="7">地球與環境學群</option>
+                        <option value="8">建築與設計學群</option>
+                        <option value="9">藝術學群</option>
+                        <option value="10">社會與心理學群</option>
+                        <option value="11">大眾傳播學群</option>
+                        <option value="12">外語學群</option>
+                        <option value="13">文史哲學群</option>
+                        <option value="14">教育學群</option>
+                        <option value="15">法政學群</option>
+                        <option value="16">管理學群</option>
+                        <option value="17">財經學群</option>
+                        <option value="18">遊憩與運動學群</option>
+
+                        
+                    </select>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <div class="question">
+                <div class="question_title"><p>5. 您填答時使用的裝置是</p></div>
+                <div class="answer_option">
+                    <form>
+                        <label><input type="radio" name="personinfo_5" value="1" required>手機</label><br>
+                        <label><input type="radio" name="personinfo_5" value="2">平板</label><br>
+                        <label><input type="radio" name="personinfo_5" value="3">電腦</label><br>
+                    </form>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <div class="question">
+                <div class="question_title"><p>6. 您的信箱</p></div>
+                <div class="answer_option">
+                    <div class="input-container" >
+                        <input type="email" id="input" name="personinfo_6" placeholder="請輸入您的信箱">
+                        <!-- <p class="answer_unit">(美元)</p> -->
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+        
+            <div class="last3page_button">
+                <input class="" type ="button" onclick="history.back()" value="上一頁"></input> 
+                <!-- <input class="next_page_button" type ="button" value="下一頁" id="send"></input>  -->
+                <input class="" type ="button" id="send9" value="下一頁" onclick="send9()"></input> 
+            </div>
+            
+
+        </div>
+    </div>
+
+
+
+    <!-- <button  onclick="send()"  >測試</button> -->
+
+
+</body>
+
+
+</html>
