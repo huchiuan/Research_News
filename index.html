@@ -23,7 +23,7 @@
 
         <div class="card-body shadow  " style="background-color:white;">
           
-            <p class="card-text">大家好，我是政治大學資管所的學生 胡祐銓，目前正在為某新聞網站進行系統的測試。</p><br>
+            <p class="card-text">大家好，我們是政治大學資管所的學生，目前正在為某新聞網站進行系統的測試。</p><br>
             <p class="card-text">⚠️填寫問卷的過程中：</p>
             <p class="card-text">1. <span class="important_info">您將閱讀幾則新聞</span>，並請於<span class="important_info">閱讀完畢後，點選下一頁回答相關問題</span></span> </p>
             <p class="card-text">2. <span class="important_info">在回答問題的頁面當中也會呈現您於上一頁所閱讀的新聞</span>，因此閱讀完畢後（回答問題前）<span class="important_info">毋需記憶新聞內容。</span></p>
@@ -31,7 +31,7 @@
         
             <p class="card-text">🙏 本份問卷完成的時間<span class="important_info">約需15分鐘</span>左右，還請您耐心地完成，非常感謝 🙏</p> <br>
             <p class="card-text">國立政治大學資訊管理學系碩士班<br>
-                研究生：胡祐銓(109356035@g.nccu.edu.tw)<br>
+              <br>
                 指導教授：彭志宏 教授
             </p>
         </div>
@@ -66,8 +66,8 @@
       // urls[1] = "normal/demo.html";
       // n = Math.floor(Math.random()*2);
 
-    //   var n = Math.floor(Math.random()*8)+1;
-      var n = 1;
+      var n = Math.floor(Math.random()*8)+1;
+      // var n = 1;
       if(n==1){
         localStorage.setItem('exam', 1);
         localStorage.setItem('systemsupport', 0);
@@ -79,7 +79,7 @@
         localStorage.setItem('exam', 2);
         localStorage.setItem('systemsupport', 0);
         localStorage.setItem('perspectivetaking', 0);
-        location.href= "exam2/intro.html";
+        location.href= "exam1/intro.html";
 
       }else if (n==3){
         localStorage.setItem('exam', 3);
@@ -91,7 +91,7 @@
         localStorage.setItem('exam', 4);
         localStorage.setItem('systemsupport', 0);
         localStorage.setItem('perspectivetaking', 1);
-        location.href= "exam4/intro.html";
+        location.href= "exam3/intro.html";
 
       }
       else if (n==5){
@@ -103,7 +103,7 @@
         localStorage.setItem('exam', 6);
         localStorage.setItem('systemsupport', 1);
         localStorage.setItem('perspectivetaking', 0);
-        location.href= "exam6/intro.html";
+        location.href= "exam5/intro.html";
       }else if (n==7){
         localStorage.setItem('exam', 7);
         localStorage.setItem('systemsupport', 1);
@@ -113,7 +113,7 @@
         localStorage.setItem('exam', 8);
         localStorage.setItem('systemsupport', 1);
         localStorage.setItem('perspectivetaking', 1);
-        location.href= "exam8/intro.html";
+        location.href= "exam7/intro.html";
       }
 
     }

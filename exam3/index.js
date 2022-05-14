@@ -46,7 +46,14 @@ function send1() {
     console.log(oneone);
     console.log(onetwo);
     console.log(localStorage.getItem('oneone'));
-    location.href='news2.html'
+
+    var exam = localStorage.getItem('exam'); 
+
+    if(exam==3){
+      location.href= "news2.html";
+    }else if (exam==4){
+      location.href= "news4.html";
+    }
   }
 };
 
@@ -90,7 +97,14 @@ function send2() {
     console.log(twoone);
     console.log(twotwo);
     console.log(localStorage.getItem('twoone'));
-    location.href='news3.html'
+
+    var exam = localStorage.getItem('exam'); 
+
+    if(exam==3){
+      location.href= "news3.html";
+    }else if (exam==4){
+      location.href= "news1.html";
+    }
   }
 };
 
@@ -133,7 +147,14 @@ function send3() {
     console.log(threeone);
     console.log(threetwo);
     console.log(localStorage.getItem('threeone'));
-    location.href='news4.html'
+
+    var exam = localStorage.getItem('exam'); 
+
+    if(exam==3){
+      location.href= "news4.html";
+    }else if (exam==4){
+      location.href= "news6.html";
+    }
   }
 };
 
@@ -181,7 +202,14 @@ function send4() {
     console.log(fourtwo);
     // console.log(onetwo);
     console.log(localStorage.getItem('fourone'));
-    location.href='news5.html'
+
+    var exam = localStorage.getItem('exam'); 
+
+    if(exam==3){
+      location.href= "news5.html";
+    }else if (exam==4){
+      location.href= "news3.html";
+    }
   }
 };
 
@@ -228,7 +256,14 @@ function send5() {
     console.log(fiveone);
     console.log(fivetwo);
     console.log(localStorage.getItem('fiveone'));
-    location.href='news6.html'
+
+      var exam = localStorage.getItem('exam'); 
+
+    if(exam==3){
+      location.href= "news6.html";
+    }else if (exam==4){
+      location.href= "check1.html";
+    }
   }
 };
 
@@ -274,7 +309,14 @@ function send6() {
     console.log(sixone);
     console.log(sixtwo);
     console.log(localStorage.getItem('oneone'));
-    location.href='check1.html'
+
+    var exam = localStorage.getItem('exam'); 
+
+    if(exam==3){
+      location.href= "check1.html";
+    }else if (exam==4){
+      location.href= "news5.html";
+    }
   }
 };
 
@@ -314,7 +356,9 @@ function send8() {
   let eightfive = $('input:radio:checked[name="eightfive"]').val();
 
   let eightsix = $('input:radio:checked[name="eightsix"]').val();
-
+  let eightseven = $('input:radio:checked[name="eightseven"]').val();
+  let eighteight = $('input:radio:checked[name="eighteight"]').val();
+  let eightnine = $('input:radio:checked[name="eightnine"]').val();
 
   if(eightone == undefined){
     alert("每題皆為必填，請確實填答");
@@ -328,6 +372,12 @@ function send8() {
     alert("每題皆為必填，請確實填答");
   }else if(eightsix == undefined){
     alert("每題皆為必填，請確實填答");
+  }else if(eightseven == undefined){
+    alert("每題皆為必填，請確實填答");
+  }else if(eighteight == undefined){
+    alert("每題皆為必填，請確實填答");
+  }else if(eightnine == undefined){
+    alert("每題皆為必填，請確實填答");
   }
   
   else{
@@ -337,6 +387,9 @@ function send8() {
     localStorage.setItem('eightfour', eightfour);
     localStorage.setItem('eightfive', eightfive);
     localStorage.setItem('eightsix', eightsix);
+    localStorage.setItem('eightseven', eightseven);
+    localStorage.setItem('eighteight', eighteight);
+    localStorage.setItem('eightnine', eightnine);
 
     console.log(eightone);
     console.log(eighttwo);
@@ -430,6 +483,9 @@ function send9() {
   var eightfour = localStorage.getItem('eightfour');  
   var eightfive = localStorage.getItem('eightfive');  
   var eightsix = localStorage.getItem('eightsix');  
+  var eightseven = localStorage.getItem('eightseven');  
+  var eighteight = localStorage.getItem('eighteight');  
+  var eightnine = localStorage.getItem('eightnine');  
   
 
 
@@ -544,6 +600,9 @@ function send9() {
           "eightfour": eightfour,
           "eightfive": eightfive,
           "eightsix": eightsix,
+          "eightseven" : eightseven,
+          "eighteight" : eighteight,
+          "eightnine" : eightnine,
 
           "personinfo_1": personinfo_1,
           "personinfo_2": personinfo_2,

@@ -7,7 +7,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">  
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>新聞網站輔助系統功能簡介</title>
+    <title>新聞網站輔助系統測試簡介</title>
     <link rel="shortcut icon" href="Logo.png" type="image/x-icon" />
     
 </head>
@@ -15,17 +15,30 @@
     <div class="demo">
         <div class="demo_head">
             <div class="demo_headline">
-                <h1>Vesta新聞網輔助系統實驗簡介</h1>
+                <h1>Vesta新聞網輔助系統測試簡介</h1>
             </div>
             <div class="demo_head_intro">
                 <p> 您待會即將進入Vesta新聞網，Vesta新聞網提供的服務類似於Google News, Hacker News等新聞網站，匯集了各地的新聞來源，為您提供方便的、最新的、完整的報導。</p>
             </div>
         </div>
 
-    <div align="center"><button class="start_button" onclick="javascript:location.href='news1.html'">進入Vesta新聞網觀看新聞並回答問題</button></div>
+    <div align="center"><button class="start_button" onclick="dogo()">進入Vesta新聞網觀看新聞並回答問題</button></div>
 
     </div>
 </body>
+<script>
+
+function dogo(){
+    var exam = localStorage.getItem('exam');  
+      if(exam==1){
+        location.href= "news1.html";
+      }else if (exam==2){
+        location.href= "news2.html";
+      }
+
+    }
+    
+</script>
 </html>
 
 <!-- 此新聞網站具有一輔助系統，且此輔助系統具有三個功能，分別是「標記情緒詞」、「標記新聞使用照片的最早出現日期」以及「標記新聞日期及作者資訊是否缺漏」 -->
