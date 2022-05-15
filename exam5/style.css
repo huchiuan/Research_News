@@ -291,7 +291,17 @@ body {
     height: 30px;
 } */
 
-
+.perespective{
+    background-color: grey;
+  
+    height: 10rem;
+}
+.perespective_words{
+    font-weight: bold;
+    color: white;
+    font-size: 150%;
+    margin-left: 0.5rem!important;
+}
 
 .answerbroder{
     border:3px red solid;

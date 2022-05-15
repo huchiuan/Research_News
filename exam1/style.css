@@ -307,7 +307,17 @@ input[type='radio'] {
     width: 50%;
     margin-top: 10px;
 } */
-
+.perespective{
+    background-color: grey;
+  
+    height: 10rem;
+}
+.perespective_words{
+    font-weight: bold;
+    color: white;
+    font-size: 150%;
+    margin-left: 0.5rem!important;
+}
 .important_info{
     font-weight: bold;
     color: red;
