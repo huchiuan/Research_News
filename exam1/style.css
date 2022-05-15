@@ -318,6 +318,9 @@ input[type='radio'] {
     font-size: 150%;
     margin-left: 0.5rem!important;
 }
+.perespective_powerful{
+    color:yellow;
+}
 .important_info{
     font-weight: bold;
     color: red;
