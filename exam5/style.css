@@ -354,6 +354,11 @@ input[type='radio'] {
     margin-bottom: 10px;
 }
 
+.important_info{
+    font-weight: bold;
+    color: red;
+    font-size: 150%;
+}
 .demo_descript{
     margin: auto;
     /* text-align: center; */

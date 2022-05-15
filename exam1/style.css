@@ -308,7 +308,11 @@ input[type='radio'] {
     margin-top: 10px;
 } */
 
-
+.important_info{
+    font-weight: bold;
+    color: red;
+    font-size: 150%;
+}
 
 #news3_assisted_pic{
     width: 100%;
