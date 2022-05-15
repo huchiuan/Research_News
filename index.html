@@ -67,6 +67,10 @@
       // n = Math.floor(Math.random()*2);
 
       var n = Math.floor(Math.random()*8)+1;
+
+      if (n==4){
+        n = Math.floor(Math.random()*8)+1;
+      }
       // var n = 1;
       if(n==1){
         localStorage.setItem('exam', 1);
